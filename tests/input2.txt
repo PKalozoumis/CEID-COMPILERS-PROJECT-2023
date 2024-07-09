@@ -1,0 +1,109 @@
+<!-- This file is supposed to test the limits of the parser -->
+
+<!-- comment -->
+
+<LinearLayout android:orientation="orient" android:layout_width="wrap_content" android:id="id_01" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="orient" android:layout_width="wrap_content" android:id="id_02" android:layout_height="match_parent">
+        <RelativeLayout android:id="id_03" android:layout_width="56" android:layout_height="wrap_content">
+            <RelativeLayout android:id="id_04" android:layout_width="match_parent" android:layout_height="001">
+
+                <TextView android:text="txt_1" android:textColor = "ourple" android:layout_width="10" android:layout_height="10"> </TextView>
+
+                <RelativeLayout android:id= <!-- comment> --> "id_05" android:layout_width="match_parent" android:layout_height="wrap_content">
+                
+                
+                
+                
+                    <!-- comment -->
+                
+                
+                <<!-- comment> --> / <!-- comment> --> RelativeLayout <!-- comment> --> >
+                <!-- comment -->
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="orient" android: layout_width="46" android:id="id_06" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:id="id_07" android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent" android:text="tex" android:layout_height="wrap_content"/>
+
+            <ProgressBar android:id="id_08" <!-- comment --> android:layout_height="+1000" android:layout_width="+000000000000000009"> </ProgressBar>
+            
+            <ProgressBar android:layout_height="wrap_content" <!-- comment --> android:max="80" android:id="id_09" android:layout_width="match_parent" />
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView android:layout_width="match_parent" <!-- comment --><!-- comment --><!-- comment --><!-- comment --> android:layout_height="wrap_content" android:src="src"></ImageView>
+    <ImageView android:layout_height="wrap_content" android:src="src" android:layout_width="match_parent"/>
+
+    <Button android:layout_height="1987" android:text="src" android:layout_width="match_parent" android:padding="+1987"></Button>
+    <Button android:padding="1987" android:layout_height="1987" android:text="src" android:layout_width="match_parent" />
+
+    <RadioGroup android:checkedButton="id_12" android:layout_width="match_parent" android:id="id_10" android:layout_height="wrap_content" android:count="6">
+        <RadioButton android:text="text" android:layout_width="match_parent" android:id="1987_" android:layout_height="wrap_content"> </RadioButton>
+        
+        <RadioButton
+            android:id="id_11"
+                android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                        android:text="te_xt"
+                            />
+
+        <RadioButton android:id="id_12"
+        android:text="te1xt" android:layout_height="123" android:layout_width=
+        "match_parent"
+        /> <!-- comment> -->
+
+                            <RadioButton
+                        android:text="tex2t"
+                    android:layout_height="wrap_content"
+                android:id="id_13"
+            android:layout_width="+01314801"
+        />
+
+        <RadioButton <!-- comment --> android:id="id_14" <!-- comment --> android:layout_height="67" <!-- comment --> android:text="te3xt" android:layout_width="12" />
+        <RadioButton android:id="id_15"  android: <!-- comment --> text="te5_xt" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <!--
+        comment-
+        comment- - - - - - - - - -
+        -
+        -
+        -
+        -
+        -c-o-m-m-e-n-t-
+    -->
+
+    <!-- comment > > -> -> ->->->->->->>>>>>>- !- <!- <!- <!- - - -->
+
+    <RadioGroup android:checkedButton="id_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:count="2">
+        <RadioButton android:text="text" android:layout_width="match_parent" android:id="id_16" android:layout_height="wrap_content"> </RadioButton>
+
+        <RadioButton android:id="id_17"  android:text="text" android:layout_height="wrap_content" android:layout_width="match_parent" />
+    </RadioGroup>
+
+    <ProgressBar android:max="3" android:id="id_18" android:progress="3" android:layout_height="wrap_content" android:layout_width="match_parent"> </ProgressBar>
+
+    <ProgressBar android:progress="1" android:layout_height="wrap_content" android:max="2" android:id="id_19" android:layout_width="match_parent" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- comment -->

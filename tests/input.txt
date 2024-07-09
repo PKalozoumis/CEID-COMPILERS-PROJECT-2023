@@ -1,0 +1,187 @@
+<LinearLayout android:orientation="orient" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="id_0">
+
+    <!-- Testing the order of attributes -->
+    <!-- ============================================================================================================================= -->
+
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="id_1" /> <!-- WHI -->
+
+    <RelativeLayout android:layout_width="wrap_content" android:id="id_2" android:layout_height="wrap_content" />  <!-- WIH -->
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="id_3" />  <!--HWI -->
+
+    <RelativeLayout android:layout_height="wrap_content" android:id="id_4" android:layout_width="wrap_content" />  <!-- HIW -->
+
+    <RelativeLayout android:id="id_5" android:layout_width="wrap_content" android:layout_height="wrap_content" />  <!-- IWH -->
+
+    <RelativeLayout android:id="id_6" android:layout_height="wrap_content" android:layout_width="wrap_content" />  <!-- IHW -->
+    
+    <!-- ============================================================================================================================= -->
+
+
+    <!-- Testing required attributes -->
+    <!-- ============================================================================================================================= -->
+
+    <!-- Won't work -->
+    <!-- <TextView> </TextView> -->
+
+    <!-- Won't work -->
+    <!-- <TextView android:text="txt_1"> </TextView> -->
+
+    <!-- Won't work -->
+    <!-- <TextView android:text="txt_1" android:layout_width="10"> </TextView> -->
+
+    <!-- Works -->
+    <TextView android:text="txt_1" android:layout_width="10" android:layout_height="10"> </TextView>
+
+    <!-- ============================================================================================================================= -->
+
+
+    <!--
+        Testing unique ID's
+        Note that id's from id_0 up to id_6 have already been taken
+    -->
+    <!-- ============================================================================================================================= -->
+
+    <!-- Won't work -->
+    <!--
+    <ImageView
+            android:src="src"
+            android:layout_width="1"
+            android:layout_height="1"
+            android:id="id_6"
+    />
+    -->
+
+    <!-- Works -->
+    <ImageView
+            android:src="src"
+            android:layout_width="1"
+            android:layout_height="1"
+            android:id="id_7"
+    />
+
+    <!-- ============================================================================================================================= -->
+
+
+    <!-- No duplicate attributes -->
+
+    <!--<TextView android:text="txt_1" android:layout_width="10" android:layout_height="10" android:text="txt_2"> </TextView>-->
+
+    <!-- Allowed values for layout_width, layout_height  -->
+    <!-- ============================================================================================================================= -->
+
+    <RelativeLayout android:layout_width="1" android:layout_height="+1" />
+
+    <!-- <RelativeLayout android:layout_width="1" android:layout_height="0" /> -->
+
+    <!-- <RelativeLayout android:layout_width="0" android:layout_height="1" /> -->
+
+    <!-- <RelativeLayout android:layout_width="1" android:layout_height="-1" /> -->
+    
+    <!-- <RelativeLayout android:layout_width="-1" android:layout_height="1" /> -->
+
+    <RelativeLayout android:layout_width="1" android:layout_height="+1" />
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+    <!-- <RelativeLayout android:layout_width="wrap_content" android:layout_height="str" />  -->
+
+    <!-- ============================================================================================================================= -->
+
+
+    <!-- Allowed values for padding  -->
+    <!-- ============================================================================================================================= -->
+
+        <ImageView android:src="src" android:layout_width="1" android:layout_height="1" android:padding="1"/>
+        
+        <!-- <ImageView android:src="src" android:layout_width="1" android:layout_height="1" android:padding="0"/>  -->
+
+        <!-- <ImageView android:padding="-1" android:src="src" android:layout_height="1" android:layout_width="1" />  -->
+
+    <!-- ============================================================================================================================= -->
+
+    <!-- checkedButton value  -->
+    <!-- ============================================================================================================================= -->
+
+    <RadioGroup android:checkedButton="check3" android:id="id_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:count="5">
+        <RadioButton android:id="check1"  android:text="text" android:layout_height="match_parent" android:layout_width="match_parent" />
+        <RadioButton android:id="check2"  android:layout_width="match_parent" android:layout_height="10" android:text="text" />
+        <RadioButton android:id="check3"  android:text="text" android:layout_height="wrap_content" android:layout_width="match_parent" />
+        <RadioButton android:id="check4"  android:layout_width="match_parent" android:text="text" android:layout_height="wrap_content" />
+        <RadioButton android:id="check5"  android:layout_height="wrap_content" android:text="text" android:layout_width="1" />
+    </RadioGroup>
+
+    <!--
+    <RadioGroup android:checkedButton="checkB" android:id="id_9" android:layout_width="match_parent" android:layout_height="wrap_content" android:count="5">
+        <RadioButton android:id="check6"  android:text="text" android:layout_height="match_parent" android:layout_width="match_parent" />
+        <RadioButton android:id="check7"  android:layout_width="match_parent" android:layout_height="10" android:text="text" />
+        <RadioButton android:id="check8"  android:text="text" android:layout_height="wrap_content" android:layout_width="match_parent" />
+        <RadioButton android:id="check9"  android:layout_width="match_parent" android:text="text" android:layout_height="wrap_content" />
+        <RadioButton android:id="checkA"  android:layout_height="wrap_content" android:text="text" android:layout_width="1" />
+    </RadioGroup>
+    -->
+
+    <!-- ============================================================================================================================= -->
+
+    <!-- Count  -->
+    <!-- ============================================================================================================================= -->
+
+    <!-- Less -->
+    <!--
+    <RadioGroup android:checkedButton="check03" android:count="5" android:id="id_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="check01"  android:text="text" android:layout_height="match_parent" android:layout_width="match_parent" />
+        <RadioButton android:id="check02"  android:layout_width="match_parent" android:layout_height="10" android:text="text" />
+        <RadioButton android:id="check03"  android:text="text" android:layout_height="wrap_content" android:layout_width="match_parent" />
+        <RadioButton android:id="check04"  android:layout_width="match_parent" android:text="text" android:layout_height="wrap_content" />
+    </RadioGroup>
+    -->
+
+    <!-- More -->
+    <!--
+    <RadioGroup android:checkedButton="checkA3" android:count="5" android:id="id_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="checkA1"  android:text="text" android:layout_height="match_parent" android:layout_width="match_parent" />
+        <RadioButton android:id="checkA2"  android:layout_width="match_parent" android:layout_height="10" android:text="text" />
+        <RadioButton android:id="checkA3"  android:text="text" android:layout_height="wrap_content" android:layout_width="match_parent" />
+        <RadioButton android:id="checkA4"  android:layout_width="match_parent" android:text="text" android:layout_height="wrap_content" />
+        <RadioButton android:id="checkA5"  android:layout_width="match_parent" android:text="text" android:layout_height="wrap_content" />
+        <RadioButton android:id="checkA6"  android:layout_width="match_parent" android:text="text" android:layout_height="wrap_content" />
+    </RadioGroup>
+    -->
+
+    <!-- String value -->
+    <!-- <RadioGroup android:count="str" android:checkedButton="null" android:layout_width="1" android:layout_height="1">  -->
+    
+    <!-- Negative value -->
+    <!-- <RadioGroup android:count="-1" android:checkedButton="null" android:layout_width="1" android:layout_height="1"> -->
+
+    <!-- Zero value -->
+    <!-- <RadioGroup android:count="0" android:checkedButton="null" android:layout_width="1" android:layout_height="1">  -->
+
+    <!-- ============================================================================================================================= -->
+
+
+    <!-- Progress Bar  -->
+    <!-- ============================================================================================================================= -->
+
+    <!-- progress without max  -->
+    <!-- <ProgressBar android:progress="1" android:layout_height="1" android:layout_width="1" /> -->
+
+    <!-- This is fine  -->
+    <ProgressBar android:max="1" android:layout_height="1" android:layout_width="1" />
+
+    <!-- <ProgressBar android:max="str" android:layout_height="1" android:layout_width="1" /> -->
+    <!-- <ProgressBar android:max="-1" android:layout_height="1" android:layout_width="1" /> -->
+    <!-- <ProgressBar android:max="0" android:layout_height="1" android:layout_width="1" /> -->
+
+    <!-- <ProgressBar android:progress="str" android:max="3" android:layout_height="1" android:layout_width="1" /> -->
+    <!-- <ProgressBar android:progress="-1" android:max="3" android:layout_height="1" android:layout_width="1" /> -->
+    <!-- <ProgressBar android:progress="4" android:max="3" android:layout_height="1" android:layout_width="1" /> -->
+    <ProgressBar android:progress="1" android:max="3" android:layout_height="1" android:layout_width="1" />
+    <ProgressBar android:max="3" android:progress="0" android:layout_height="1" android:layout_width="1" />
+
+    <!-- ============================================================================================================================= -->
+        
+</LinearLayout>
